@@ -14,6 +14,14 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - uses: nivinvysakh/gh-tree@main
+      - uses: nivinvysakh/gh-tree@Imp
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}
+          # Live weather from Open-Meteo for your city (auto-detects sun, night, rain, snow, clouds)
+          city: "Chicago"
+          # Or manually force a weather condition: auto | sunny | night | rain | snow | cloudy
+          weather: "auto"
+          # Recency window in days for flowers (open PRs), red apples (merged PRs), and golden apples
+          pr-days: "14"
+          # Total days of history to fetch for commit canopy leaves (~14 weekly tiers)
+          days: "140"
