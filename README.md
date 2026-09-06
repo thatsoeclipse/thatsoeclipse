@@ -1,5 +1,3 @@
 ## Hi there 👋
 
-<!-- commit-tree-start -->
-![tree](tree.gif?v=1788659241103)
-<!-- commit-tree-end -->
+[![thatsoeclipse's Minecraft Tree](https://gh-tree.vercel.app/api/tree.gif?user=thatsoeclipse&theme=spruce&weather=snow&pet=wolf&campfire=true)](https://github.com/nivinvysakh/gh-tree)
