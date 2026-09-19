@@ -1,0 +1,29 @@
+name: Daily Minecraft Tree Update
+
+on:
+  schedule:
+    - cron: '0 0 * * *' # Runs daily at midnight UTC
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  build-tree:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Generate Minecraft Tree
+        uses: nivinvysakh/gh-tree@refactor
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          tree-type: 'acacia'
+          pet: 'none'
+          event: 'none'
+          weather: 'sunny'
+          show-campfire: true
+          show-chest: true
+          show-signpost: true
+          show-bee: true
